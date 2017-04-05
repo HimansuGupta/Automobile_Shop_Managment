@@ -104,7 +104,7 @@ public class getproductfordelete extends HttpServlet {
 				result = psSelect.executeUpdate();
 				System.out.println(result);
 			}
-			request.setAttribute("Data", result);
+			request.setAttribute("result", result);
 			request.getRequestDispatcher("deleteproduct.jsp").forward(request, response);
 			System.out.println("getproductfordelete.java");	
 			connection.close();
